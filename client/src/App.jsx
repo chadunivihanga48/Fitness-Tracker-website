@@ -21,6 +21,7 @@ const Container = styled.div`
 `;
 
 function App() {
+  <h1>Dashboard Test</h1>
   const { currentUser } = useSelector((state) => state.user);
   return (
     <ThemeProvider theme={lightTheme}>
@@ -29,8 +30,8 @@ function App() {
           <Container>
             <Navbar currentUser={currentUser} />
             <Routes>
-              <Route path="/" exact element={<Dashboard />} />
-              <Route path="/workouts" exact element={<Workouts />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/workouts" element={<Workouts />} />
             </Routes>
           </Container>
         ) : (
