@@ -1,9 +1,8 @@
-
 import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  flex: 1;
+  flex: 1; 
   min-width: 200px;
   padding: 24px;
   border: 1px solid ${({ theme }) => theme.text_primary + 20};
@@ -81,7 +80,7 @@ const Desc = styled.div`
   }
 `;
 
-const CountsCard = ({ item, data }) => {
+const CountsCard = ({ item }) => {
   return (
     <Card>
       <Left>

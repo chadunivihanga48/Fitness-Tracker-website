@@ -1,4 +1,3 @@
-
 import React from "react";
 import styled from "styled-components";
 import { BarChart } from "@mui/x-charts/BarChart";
@@ -37,7 +36,7 @@ const WeeklyStatCard = ({ data }) => {
           ]}
           series={[{ data: data?.totalWeeksCaloriesBurnt?.caloriesBurned }]}
           height={300}
-        />
+        /> 
       )}
     </Card>
   );

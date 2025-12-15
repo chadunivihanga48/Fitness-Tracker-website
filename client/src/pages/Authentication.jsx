@@ -17,6 +17,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   position: relative;
+  background: blue;
   @media (max-width: 700px) {
     display: none;
   }
@@ -44,6 +45,7 @@ const Right = styled.div`
   gap: 16px;
   align-items: center;
   justify-content: center;
+  background: red;
 `;
 
 const Text = styled.div`
@@ -67,7 +69,7 @@ const Authentication = () => {
   return (
     <Container>
       <Left>
-        <Logo src={LogoImage} />
+        <Logo src={Logo} />
         <Image src={AuthImage} />
       </Left>
       <Right>

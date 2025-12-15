@@ -145,7 +145,7 @@ export const getUserDashboard = async (req, res, next) => {
 
       const weekData = await Workout.aggregate([
         {
-          $match: {
+           $match: {
             user: user._id,
             date: { $gte: startOfDay, $lt: endOfDay },
           },

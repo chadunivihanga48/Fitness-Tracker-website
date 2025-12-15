@@ -1,3 +1,4 @@
+import React from "react";
 import { ThemeProvider, styled } from "styled-components";
 import { lightTheme } from "./utils/Themes";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -7,6 +8,8 @@ import { useSelector } from "react-redux";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Workouts from "./pages/Workouts";
+
+
 
 const Container = styled.div`
   width: 100%;
@@ -21,8 +24,7 @@ const Container = styled.div`
 `;
 
 function App() {
-  <h1>Dashboard Test</h1>
-  const { currentUser } = useSelector((state) => state.user);
+  const currentUser = useSelector((state) => state.user);
   return (
     <ThemeProvider theme={lightTheme}>
       <BrowserRouter>

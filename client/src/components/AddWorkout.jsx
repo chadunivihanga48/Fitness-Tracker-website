@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import TextInput from "./TextInput";
 import Button from "./Button";
@@ -31,30 +30,22 @@ const AddWorkout = ({ workout, setWorkout, addNewWorkout, buttonLoading }) => {
   return (
     <Card>
       <Title>Add New Workout</Title>
-      <TextInput
-        label="Workout"
-        textArea
-        rows={10}
-        placeholder={`Enter in this format:
-
-#Category
--Workout Name
--Sets
--Reps
--Weight
--Duration`}
-        value={workout}
-        handelChange={(e) => setWorkout(e.target.value)}
-      />
-      <Button
-        text="Add Workout"
-        small
-        onClick={() => addNewWorkout()}
-        isLoading={buttonLoading}
-        isDisabled={buttonLoading}
-      />
+      <TextInput 
+      label= "Workout"
+      textArea
+      rows={10}
+      placeholder={`Enter in this forma:
+        #Category
+        -Workout Name
+        -Sets
+        -Reps
+        -Weight
+        -Duration`}
+      value = {workout}
+      handleChange={(e) => setWorkout(e.target)}/>
+      <Button text="Add Workout" small onClick = {() => addNewWorkout()} isLoading={buttonLoading} isDisabled={buttonLoading}/>
     </Card>
   );
 };
 
-export default AddWorkout;
+export default WeeklyStatCard;

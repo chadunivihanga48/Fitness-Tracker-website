@@ -65,32 +65,17 @@ const SignIn = () => {
         <Title>Welcome to Fittrack 👋</Title>
         <Span>Please login with your details here</Span>
       </div>
-      <div
-        style={{
+      <div style={{
           display: "flex",
           gap: "20px",
           flexDirection: "column",
         }}
       >
-        <TextInput
-          label="Email Address"
-          placeholder="Enter your email address"
-          value={email}
-          handelChange={(e) => setEmail(e.target.value)}
+        <TextInput label="Email Address" placeholder="Enter your email address" value={email} handleChange={(e) => setEmail(e.target.value)}
         />
-        <TextInput
-          label="Password"
-          placeholder="Enter your password"
-          password
-          value={password}
-          handelChange={(e) => setPassword(e.target.value)}
+        <TextInput label="Password" placeholder="Enter your password" password value={password} handleChange={(e) => setPassword(e.target.value)}
         />
-        <Button
-          text="SignIn"
-          onClick={handelSignIn}
-          isLoading={loading}
-          isDisabled={buttonDisabled}
-        />
+        <Button text="SignIn" onClick={handelSignIn} isLoading={loading} isDisabled={buttonDisabled} />
       </div>
     </Container>
   );

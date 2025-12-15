@@ -1,11 +1,5 @@
 import express from "express";
-import {
-  UserLogin,
-  UserRegister,
-  addWorkout,
-  getUserDashboard,
-  getWorkoutsByDate,
-} from "../controllers/User.js";
+import { UserLogin, UserRegister, addWorkout, getUserDashboard, getWorkoutsByDate } from "../controllers/User.js";
 import { verifyToken } from "../middleware/verifyToken.js";
 
 const router = express.Router();

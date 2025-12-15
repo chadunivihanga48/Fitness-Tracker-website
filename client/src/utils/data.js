@@ -1,9 +1,4 @@
-
-import {
-  FitnessCenterRounded,
-  LocalFireDepartmentRounded,
-  TimelineRounded,
-} from "@mui/icons-material";
+import { FitnessCenterRounded, LocalFireDepartmentRounded, TimelineRounded } from "@mui/icons-material";
 
 export const counts = [
   {

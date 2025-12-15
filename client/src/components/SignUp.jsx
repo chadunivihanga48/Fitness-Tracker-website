@@ -91,11 +91,7 @@ const SignUp = () => {
           value={password}
           handelChange={(e) => setPassword(e.target.value)}
         />
-        <Button
-          text="SignUp"
-          onClick={handelSignUp}
-          isLoading={loading}
-          isDisabled={buttonDisabled}
+        <Button text="SignUp" onClick={handelSignUp} isLoading={loading} isDisabled={buttonDisabled}
         />
       </div>
     </Container>
